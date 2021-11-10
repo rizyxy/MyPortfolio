@@ -4,6 +4,14 @@ body {
     padding: 0%;
 }
 
+.NavbarPhone {
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
 .Navbar {
     padding: 1em;
     background-color: black;
@@ -45,9 +53,9 @@ body {
 
 @media screen and (max-width:800px) {
     .IntroductionContent {
-        padding-left: 100px;
-        padding-right: 100px;
-
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: justify;
     }
 
     .ProjectCard {
@@ -129,3 +137,38 @@ body {
     font-size: x-large;
 }
 
+@media screen and (max-width:500px) {
+
+    .Navbar {
+        display: none;
+    }
+
+    .NavbarPhone {
+        display: block;
+    }
+
+    .IntroductionContent {
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: justify;
+    }
+
+    .ProjectCard {
+        font-size: medium;
+        justify-content: center;
+        display: block;
+        width: 200px;
+        justify-content: center;
+    }
+
+    #SkillRemove {
+        display: none;
+    }
+
+    .SkillCard {
+        font-size: medium;
+        justify-content: center;
+        display: block;
+        width: 200px;
+    }
+}
